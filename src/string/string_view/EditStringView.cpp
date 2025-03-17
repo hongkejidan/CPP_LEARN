@@ -1,21 +1,20 @@
 #include <iostream>
 #include <string_view>
 
-int main()
-{
-    std::string_view str{"Peach"};
+int main() {
+  std::string_view str{"Peach"};
 
-    std::cout << str << '\n';
+  std::cout << str << '\n';
 
-    // Ignore the first character.
-    str.remove_prefix(1);
+  // Ignore the first character.
+  str.remove_prefix(1);
 
-    std::cout << str << '\n';
+  std::cout << str << '\n';
 
-    // Ignore the last 2 characters.
-    str.remove_suffix(2);
+  // Ignore the last 2 characters.
+  str.remove_suffix(2);
 
-    std::cout << str << '\n';
+  std::cout << str << '\n';
 
-    return 0;
+  return 0;
 }
